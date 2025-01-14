@@ -12,9 +12,7 @@
 }
 
 header {
-    background-image: url(/img/bg-header.svg);
-    background-size: cover;
-    background-position: 0px -10px;
+    background-color:val(--purple);
     padding: 1em 0em;
     display: flex;
     justify-content: center;
