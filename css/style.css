@@ -12,7 +12,7 @@
 }
 
 header {
-    background-color:var(--purple);
+    background-color: var(--purple);
     padding: 1em 0em;
     display: flex;
     justify-content: center;
