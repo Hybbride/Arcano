@@ -12,7 +12,7 @@
 }
 
 header {
-    background-color:val(--purple);
+    background-color:var(--purple);
     padding: 1em 0em;
     display: flex;
     justify-content: center;
@@ -106,6 +106,7 @@ button:hover {background-color: var(--yellow); transition: 0.5s;
 
 footer {
     background-color: var(--purple);
+    heigth: 4em;
 }
 
 @media (max-width:720px) {
