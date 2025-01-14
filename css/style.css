@@ -1,0 +1,142 @@
+*{margin: 0px;  padding: 0px;   box-sizing: border-box; color: white;}
+
+:root {
+    --purple:#1B1534;
+    --purple2:#2d254b;
+    --light-purple:#9C91C5;
+    --green:#5AB88F;
+    --green-light:#90daba;
+    --yellow:#FCC86C;
+    --dark-pink:#711E5A;
+    --pink:#D469A6;
+}
+
+header {
+    background-image: url(/img/bg-header.svg);
+    background-size: cover;
+    background-position: 0px -10px;
+    padding: 1em 0em;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {color: var(--yellow); text-shadow: 0px 5px 10px 10px var(--purple); 
+
+    font-family: "tt-commons-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom:1em;}
+
+
+h4 {font-family: "tt-commons-pro", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--purple);
+    font-size: 1.5em;} 
+    
+
+strong {color: var(--green-light);}
+p,small{
+    font-family: brevia, sans-serif;
+font-weight: 500;
+font-style: normal;
+}
+
+small {color: pink;}
+
+ul {
+    padding-left: 1em;
+    margin-top: 1em;
+    border-left: solid var(--pink) 3px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 1em;
+}
+
+li>p {
+    font-weight: 400;
+}
+
+header > img {
+    height: 4.5em;
+}
+
+main {
+    padding: 5em 0em;
+    background: rgb(27,21,52);
+background: linear-gradient(90deg, rgba(27,21,52,1) 0%, rgba(69,60,104,1) 50%, rgba(27,21,52,1) 100%);;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 60em;
+    display: flex;
+    gap: 3em;
+}
+
+.contenido {
+    height: 100%;
+    padding: 2em 0em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main > img {
+    width: 30em;
+    box-shadow: 6px 6px 2px 1px var(--pink);
+}
+
+button {
+    width: 100%;
+    background-color: var(--light-purple);
+    padding: 1em 3em;
+    border: none;
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 5px 0px var(--light-purple);
+    color: var(--purple);
+    font-weight: 800;
+    font-size: 1em;
+}
+
+button:hover {background-color: var(--yellow); transition: 0.5s;
+    box-shadow: 0px 0px 5px 0px var(--purple);
+}
+
+footer {
+    background-color: var(--purple);
+}
+
+@media (max-width:720px) {
+
+    header {
+        width: 100%;
+        position: fixed;
+        background-image: none;
+        background-color: #1B1534;
+    }
+
+    header > img {
+        height: 15vw;
+    }
+
+    main {padding: 5em 0em;}
+
+    .main {
+        width: 85%;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .main > img {
+        width: 100%;
+        order: 2;
+    }
+
+    .contenido {
+        order: 1;
+    }
+}
